@@ -2,7 +2,7 @@
   "name": "Multilogin",
   "version": "0.1.0",
   "private": true,
-  "homepage": "multilogin.degentle.com",
+  "homepage": "https://multilogin.ga/",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@testing-library/jest-dom": "^5.16.1",
