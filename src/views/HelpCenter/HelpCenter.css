@@ -1,0 +1,18 @@
+.how-it-works-headline {
+  background-image: linear-gradient(
+    137deg,
+    #3cf7a2 33%,
+    #06e8ff 49%,
+    #b11aff 57%,
+    #ff61d3 80%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+.help-center-a-tag {
+  color: black;
+}

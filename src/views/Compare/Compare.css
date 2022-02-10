@@ -1,0 +1,42 @@
+.table > :not(caption) > * > * {
+  padding: 0.95rem 0.95rem;
+  background-color: #fff;
+  border-bottom-width: 1px;
+}
+
+.table > :not(:last-child) > :last-child > * {
+  border-bottom-color: #edeff1;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+.btn-black {
+  color: white;
+  background-color: black;
+  border-color: black;
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid;
+  padding: 0.45rem 2rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+}

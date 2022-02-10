@@ -1,0 +1,18 @@
+.security-headline {
+  background-image: linear-gradient(
+    137deg,
+    #3cf7a2 0%,
+    #06e8ff 8%,
+    #b11aff 18%,
+    #ff61d3 32%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+.mb-5 {
+  margin-bottom: 4.5rem !important;
+}

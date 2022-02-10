@@ -1,0 +1,150 @@
+.py-5 {
+  padding-top: 3.5rem !important;
+  padding-bottom: 3.5rem !important;
+}
+
+.pricing-heading {
+  background-image: linear-gradient(
+    286deg,
+    #3cf7a2 20%,
+    #06e8ff 40%,
+    #b11aff 60%,
+    #ff61d3 80%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+.btn-monthly {
+  color: white;
+  background-image: linear-gradient(
+    114deg,
+    #06e8ff 11%,
+    #b11aff 63%,
+    #ff61d3 100%
+  );
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  padding: 0.5rem 1.8rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+.mr-2 {
+  margin-right: 1.25rem;
+}
+
+.btn-black {
+  color: white;
+  background-color: black;
+  border-color: white;
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid;
+  padding: 0.45rem 2rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-pricing {
+  background-color: #222529;
+  border-radius: 15px;
+  color: white;
+}
+
+.rating-headline {
+  background-image: linear-gradient(
+    103deg,
+    #3cf7a2 35%,
+    #06e8ff 46%,
+    #b11aff 60%,
+    #ff61d3 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-pricing .card-pricing-price {
+  padding: 20px 0;
+  font-size: 50px;
+}
+
+.card-pricing .card-pricing-features {
+  color: white;
+}
+
+.card-pricing .card-pricing-features li {
+  padding: 8px;
+  text-align: start;
+}
+
+.mr-1 {
+  margin-right: 0.75rem;
+}
+
+.card-pricing .card-pricing-features li {
+  padding: 8px;
+  text-align: start;
+  list-style: none;
+}
+
+.card-pricing-features {
+  text-align: center;
+}
+
+.btn-buy-now-solid {
+  color: white;
+  background-image: linear-gradient(
+    111deg,
+    #06e8ff 0%,
+    #b11aff 63%,
+    #e64be1 100%
+  );
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  padding: 0.5rem 1.8rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+
+.card-pricing-recommended {
+  background-color: white;
+  color: white;
+  margin-top: -3rem;
+}
+
+.card-pricing-recommended .card-pricing-plan-tag {
+  background-image: linear-gradient(
+    101deg,
+    #3cf7a2 0%,
+    #06e8ff 31%,
+    #b11aff 75%,
+    #ff61d3 100%
+  );
+  color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 14px 0;
+  font-weight: 400;
+  font-family: 'Uni Neue', sans-serif;
+  margin: -1.6rem -1.6rem 1.6rem -1.6rem;
+}
+.card-pricing-recommended .card-pricing-features {
+  color: black;
+}

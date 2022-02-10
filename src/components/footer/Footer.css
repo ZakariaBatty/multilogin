@@ -1,0 +1,13 @@
+.p-color {
+  font-weight: bold;
+  font-size: 18px;
+  background-image: linear-gradient(
+    163deg,
+    #3cf7a2 35%,
+    #06e8ff 19%,
+    #b11aff 60%,
+    #ff61d3 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,34 @@
+.py-5 {
+  padding-top: 3.5rem !important;
+  padding-bottom: 3.5rem !important;
+}
+
+.rating-headline {
+  background-image: linear-gradient(
+    103deg,
+    #3cf7a2 35%,
+    #06e8ff 46%,
+    #b11aff 60%,
+    #ff61d3 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.comment-box-title {
+  align-items: center !important;
+  display: flex !important;
+}
+
+.comment-box-content p {
+  font-size: 0.75rem;
+  color: #98a6ad !important;
+}
+
+.comment-box-title h4 {
+  font-weight: 400;
+  font-size: 18px;
+}
+.ms-3 {
+  margin-left: 1.5rem !important;
+}
