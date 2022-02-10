@@ -26,11 +26,11 @@
   border-width: 5px;
   /* height: 700px; */
   border-image-source: linear-gradient(
-    180deg,
-    #3cf7a2 0%,
-    #06e8ff 33%,
-    #b11aff 63%,
-    #ff61d3 100%
+    -180deg,
+    #f7541c 11%,
+    #80731c 63%,
+    #f0c712 100%,
+    #000000 100%
   );
 }
 

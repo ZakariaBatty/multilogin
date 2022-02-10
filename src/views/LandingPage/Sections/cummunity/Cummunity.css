@@ -5,11 +5,11 @@
 
 .rating-headline {
   background-image: linear-gradient(
-    103deg,
-    #3cf7a2 35%,
-    #06e8ff 46%,
-    #b11aff 60%,
-    #ff61d3 100%
+    -103deg,
+    #f7541c 11%,
+    #80731c 63%,
+    #f0c712 100%,
+    #000000 100%
   );
   background-clip: text;
   -webkit-text-fill-color: transparent;

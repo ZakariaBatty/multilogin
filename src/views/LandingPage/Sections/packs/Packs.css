@@ -5,11 +5,11 @@
 
 .pricing-heading {
   background-image: linear-gradient(
-    286deg,
-    #3cf7a2 20%,
-    #06e8ff 40%,
-    #b11aff 60%,
-    #ff61d3 80%
+    -286deg,
+    #f7541c 11%,
+    #80731c 63%,
+    #f0c712 100%,
+    #000000 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -20,10 +20,10 @@
 .btn-monthly {
   color: white;
   background-image: linear-gradient(
-    114deg,
-    #06e8ff 11%,
-    #b11aff 63%,
-    #ff61d3 100%
+    -114deg,
+    #f7541c 11%,
+    #80731c 63%,
+    #f0c712 100%
   );
   display: inline-block;
   cursor: pointer;
@@ -65,11 +65,11 @@
 
 .rating-headline {
   background-image: linear-gradient(
-    103deg,
-    #3cf7a2 35%,
-    #06e8ff 46%,
-    #b11aff 60%,
-    #ff61d3 100%
+    -103deg,
+    #f7541c 11%,
+    #80731c 63%,
+    #f0c712 100%,
+    #000000 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -106,10 +106,10 @@
 .btn-buy-now-solid {
   color: white;
   background-image: linear-gradient(
-    111deg,
-    #06e8ff 0%,
-    #b11aff 63%,
-    #e64be1 100%
+    -103deg,
+    #f7541c 11%,
+    #80731c 63%,
+    #f0c712 100%
   );
   display: inline-block;
   font-weight: 600;
@@ -131,11 +131,11 @@
 
 .card-pricing-recommended .card-pricing-plan-tag {
   background-image: linear-gradient(
-    101deg,
-    #3cf7a2 0%,
-    #06e8ff 31%,
-    #b11aff 75%,
-    #ff61d3 100%
+    -101deg,
+    #f7541c 11%,
+    #80731c 63%,
+    #f0c712 100%,
+    #000000 100%
   );
   color: white;
   border-top-left-radius: 15px;

@@ -10,11 +10,11 @@
 .btn-subscribe {
   color: white;
   background-image: linear-gradient(
-    111deg,
-    #06e8ff 0%,
-    #b11aff 63%,
-    #e64be1 100%
-  );
+    -103deg,
+    #f7541c 11%,
+    #80731c 63%,
+    #f0c712 100%
+      );
   display: inline-block;
   font-weight: 600;
   line-height: 1.5;

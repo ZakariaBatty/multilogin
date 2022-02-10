@@ -14,10 +14,10 @@
 .btn-get-started {
   color: white;
   background-image: linear-gradient(
-    238deg,
-    #06e8ff 11%,
-    #b11aff 63%,
-    #ff61d3 100%,
+    -238deg,
+    #f7541c 11%,
+    #80731c 63%,
+    #f0c712 100%,
     #000000 100%
   );
   display: inline-block;
