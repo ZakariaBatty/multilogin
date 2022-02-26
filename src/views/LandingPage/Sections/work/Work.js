@@ -8,7 +8,6 @@ import tab from '../../../../assets/images/tab.png';
 const Work = () => {
   const changePositionImg = () => {
     if (window.scrollY >= 2500) {
-      console.log(window.scrollY);
       document.getElementById('tab-3').style.right = '0';
       document.getElementById('tab-3').style.transform =
         'perspective(1500px) rotateY(-40deg)';

@@ -5,14 +5,14 @@ const PrivacyPolicy = () => {
   return (
     <>
       {/* <!-- START HOW IT WORKS 1 --> */}
-      <section class="py-5">
-        <div class="container">
-          <div class="row mb-5 justify-content-center">
-            <h1 class="mt-3 mb-5 text-center how-it-works-headline">
+      <section className="py-5">
+        <div className="container">
+          <div className="row mb-5 justify-content-center">
+            <h1 className="mt-3 mb-5 text-center how-it-works-headline">
               Privacy Policy
             </h1>
-            <div class="card" style={{ width: '80%', color: 'black' }}>
-              <div class="card-body">
+            <div className="card" style={{ width: '80%', color: 'black' }}>
+              <div className="card-body">
                 <p>
                   This Privacy Policy describes Our policies and procedures on
                   the collection, use and disclosure of Your information when
@@ -1688,8 +1688,8 @@ const PrivacyPolicy = () => {
                 </ul>
                 <p>
                   <strong>
-                    Category C: Protected classification characteristics under
-                    California or federal law.
+                    Category C: Protected classNameification characteristics
+                    under California or federal law.
                   </strong>
                 </p>
                 <ul>
@@ -1815,9 +1815,10 @@ const PrivacyPolicy = () => {
                     <span style={{ fontWeight: '400' }}>
                       Examples: Education records directly related to a student
                       maintained by an educational institution or party acting
-                      on its behalf, such as grades, transcripts, class lists,
-                      student schedules, student identification codes, student
-                      financial information, or student disciplinary records.
+                      on its behalf, such as grades, transcripts, className
+                      lists, student schedules, student identification codes,
+                      student financial information, or student disciplinary
+                      records.
                     </span>
                   </li>
                   <li style={{ fontWeight: '400' }}>
@@ -2396,7 +2397,7 @@ const PrivacyPolicy = () => {
                       By email:{' '}
                       <a
                         href="/cdn-cgi/l/email-protection"
-                        class="__cf_email__"
+                        className="__cf_email__"
                         data-cfemail="91e1e3f8e7f0f2e8d1e2f4fff5bfe6f8ff"
                       >
                         [email&#160;protected]
@@ -2717,7 +2718,7 @@ const PrivacyPolicy = () => {
                   <span style={{ fontWeight: '400' }}>
                     By email:{' '}
                     <a href target="_blank">
-                      <span class="__cf_email__" data-cfemail="">
+                      <span className="__cf_email__" data-cfemail="">
                         [email&#160;protected]
                       </span>
                     </a>
@@ -2727,7 +2728,7 @@ const PrivacyPolicy = () => {
               </div>
             </div>
           </div>
-          <hr class="hr-line" />
+          <hr className="hr-line" />
         </div>
       </section>
       {/* <!-- END HOW IT WORKS 1 -->  */}

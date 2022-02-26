@@ -5,14 +5,14 @@ const TermsServices = () => {
   return (
     <>
       {/* <!-- START HOW IT WORKS 1 --> */}
-      <section class="py-5">
-        <div class="container">
-          <div class="row mb-5 justify-content-center">
-            <h1 class="mt-3 mb-5 text-center how-it-works-headline">
+      <section className="py-5">
+        <div className="container">
+          <div className="row mb-5 justify-content-center">
+            <h1 className="mt-3 mb-5 text-center how-it-works-headline">
               Terms And Conditions
             </h1>
-            <div class="card" style={{ width: '80%', color: 'black' }}>
-              <div class="card-body">
+            <div className="card" style={{ width: '80%', color: 'black' }}>
+              <div className="card-body">
                 <h4>
                   <strong>Interpretation and Definitions</strong>
                 </h4>
@@ -1212,7 +1212,7 @@ const TermsServices = () => {
                   <span style={{ fontWeight: '400' }}>
                     By email:{' '}
                     <a href target="_blank">
-                      <span class="__cf_email__" data-cfemail="">
+                      <span className="__cf_email__" data-cfemail="">
                         [email&#160;protected]
                       </span>
                     </a>
@@ -1222,7 +1222,7 @@ const TermsServices = () => {
               </div>
             </div>
           </div>
-          <hr class="hr-line" />
+          <hr className="hr-line" />
         </div>
       </section>
       {/* <!-- END HOW IT WORKS 1 --> */}

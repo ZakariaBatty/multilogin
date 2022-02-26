@@ -7,11 +7,9 @@ const header = () => {
       document.getElementById('vidoeAnimation').style.transform = 'scale(0.3)';
     }
     if (window.scrollY >= 700) {
-      console.log(window.scrollY);
       document.getElementById('vidoeAnimation').style.transform = 'scale(0.6)';
     }
     if (window.scrollY >= 900) {
-      console.log(window.scrollY);
       document.getElementById('vidoeAnimation').style.transform = 'scale(1)';
     }
   };
@@ -19,10 +17,10 @@ const header = () => {
   return (
     <>
       {/* START HOW IT WORKS 1  */}
-      <div class="blacker" style={{ color: 'white' }}>
-        <section class="py-5">
+      <div className="blacker" style={{ color: 'white' }}>
+        <section className="py-5">
           <div
-            class="col-md-12 text-center"
+            className="col-md-12 text-center"
             style={{
               maxWidth: '1200px',
               margin: 'auto',
@@ -46,23 +44,23 @@ const header = () => {
             </div>
             <div style={{ textAlign: 'center' }}>
               <a
-                class="btn-white"
+                className="btn-white"
                 href="/pricing"
                 style={{ paddingTop: '12px', paddingBottom: '12px' }}
               >
-                Get Started Now <i class="fas fas-arrow"></i>
+                Get Started Now <i className="fas fas-arrow"></i>
               </a>
             </div>
           </div>
         </section>
 
         <section
-          class="py-5 video-container"
+          className="py-5 video-container"
           style={{ height: '200vh', padding: '20px' }}
         >
           <div
             id="vidoeAnimation"
-            class="col-md-12 how-it-works-video video-box"
+            className="col-md-12 how-it-works-video video-box"
             style={{ maxWidth: '1200px', margin: 'auto' }}
           >
             <iframe

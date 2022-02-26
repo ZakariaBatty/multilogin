@@ -18,24 +18,24 @@ const Help = () => {
     <>
       {/* START Write High end something */}
       <section
-        class="py-5 text-appear-container"
+        className="py-5 text-appear-container"
         style={{ marginTop: ' 130px' }}
       >
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="text-center">
-                <h1 class="mt-0">Sendwin will help you</h1>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="text-center">
+                <h1 className="mt-0">Sendwin will help you</h1>
               </div>
             </div>
           </div>
-          <div class="text-appear" style={{ opacity: '1' }}>
-            <div class="row mt-4 pt-4 ">
-              <div class="col-md-4">
-                <div class="card card-pricing card-h-100">
-                  <div class="card-body">
-                    <img src={SwitchAccount} alt="" height="48" class="mb-2" />
-                    <h3 class="mb-3">Switch accounts with ease</h3>
+          <div className="text-appear" style={{ opacity: '1' }}>
+            <div className="row mt-4 pt-4 ">
+              <div className="col-md-4">
+                <div className="card card-pricing card-h-100">
+                  <div className="card-body">
+                    <img src={SwitchAccount} alt="" height="48" className="mb-2" />
+                    <h3 className="mb-3">Switch accounts with ease</h3>
                     <p>
                       Switch between multiple account easily with just one click
                       access using Sendwin.
@@ -44,16 +44,16 @@ const Help = () => {
                 </div>
               </div>
 
-              <div class="col-md-4">
-                <div class="card card-pricing card-h-100">
-                  <div class="card-body">
+              <div className="col-md-4">
+                <div className="card card-pricing card-h-100">
+                  <div className="card-body">
                     <img
                       src={ShareSessionDevice}
                       alt=""
                       height="48"
-                      class="mb-2"
+                      className="mb-2"
                     />
-                    <h3 class="mb-3">Share Session across device</h3>
+                    <h3 className="mb-3">Share Session across device</h3>
                     <p>
                       Share all sessions across all your device with just one
                       click using Sendwin.
@@ -62,11 +62,11 @@ const Help = () => {
                 </div>
               </div>
 
-              <div class="col-md-4">
-                <div class="card card-pricing card-h-100">
-                  <div class="card-body">
-                    <img src={MultiLogin} alt="" height="48" class="mb-2" />
-                    <h3 class="mb-3">Mutiple login made easy</h3>
+              <div className="col-md-4">
+                <div className="card card-pricing card-h-100">
+                  <div className="card-body">
+                    <img src={MultiLogin} alt="" height="48" className="mb-2" />
+                    <h3 className="mb-3">Mutiple login made easy</h3>
                     <p>
                       Speed up your productivity pipeline by 80% and work by 60%
                       using Sendwin.
@@ -76,17 +76,17 @@ const Help = () => {
               </div>
             </div>
 
-            <div class="row mt-1">
-              <div class="col-md-4">
-                <div class="card card-pricing card-h-100">
-                  <div class="card-body">
+            <div className="row mt-1">
+              <div className="col-md-4">
+                <div className="card card-pricing card-h-100">
+                  <div className="card-body">
                     <img
                       src={SessionIsolationTab}
                       alt=""
                       height="48"
-                      class="mb-2"
+                      className="mb-2"
                     />
-                    <h3 class="mb-3">Session isolation on every tab</h3>
+                    <h3 className="mb-3">Session isolation on every tab</h3>
                     <p>
                       {' '}
                       Easily isolate and test more copy variations to decrease
@@ -96,16 +96,16 @@ const Help = () => {
                 </div>
               </div>
 
-              <div class="col-md-4">
-                <div class="card card-pricing card-h-100">
-                  <div class="card-body">
+              <div className="col-md-4">
+                <div className="card card-pricing card-h-100">
+                  <div className="card-body">
                     <img
                       src={DifferentBrowsers}
                       alt=""
                       height="48"
-                      class="mb-2"
+                      className="mb-2"
                     />
-                    <h3 class="mb-3">Different browser in single window</h3>
+                    <h3 className="mb-3">Different browser in single window</h3>
                     <p>
                       No more need for secondary browsers, private sessions, let
                       Sendwn handle these for you..
@@ -114,16 +114,16 @@ const Help = () => {
                 </div>
               </div>
 
-              <div class="col-md-4">
-                <div class="card card-pricing card-h-100">
-                  <div class="card-body">
+              <div className="col-md-4">
+                <div className="card card-pricing card-h-100">
+                  <div className="card-body">
                     <img
                       src={BookmarkFavSession}
                       alt=""
                       height="48"
-                      class="mb-2"
+                      className="mb-2"
                     />
-                    <h3 class="mb-3">Bookmark your favourite sessions</h3>
+                    <h3 className="mb-3">Bookmark your favourite sessions</h3>
                     <p>
                       Save your favourite sessions account and most used
                       accounts directly in your browser tab.
@@ -132,12 +132,12 @@ const Help = () => {
                 </div>
               </div>
             </div>
-            <div class="row mt-1">
-              <div class="col-md-4">
-                <div class="card card-pricing card-h-100">
-                  <div class="card-body">
-                    <img src={ProxyAddon} alt="" height="48" class="mb-2" />
-                    <h3 class="mb-3">Premium Proxy addon</h3>
+            <div className="row mt-1">
+              <div className="col-md-4">
+                <div className="card card-pricing card-h-100">
+                  <div className="card-body">
+                    <img src={ProxyAddon} alt="" height="48" className="mb-2" />
+                    <h3 className="mb-3">Premium Proxy addon</h3>
                     <p>
                       Protect pages that you don’t feel like sharing like
                       account, billing pages without permission.
@@ -146,16 +146,16 @@ const Help = () => {
                 </div>
               </div>
 
-              <div class="col-md-4">
-                <div class="card card-pricing card-h-100">
-                  <div class="card-body">
+              <div className="col-md-4">
+                <div className="card card-pricing card-h-100">
+                  <div className="card-body">
                     <img
                       src={ProtectSessionPriavacy}
                       alt=""
                       height="48"
-                      class="mb-2"
+                      className="mb-2"
                     />
-                    <h3 class="mb-3">Protect every Session Pages</h3>
+                    <h3 className="mb-3">Protect every Session Pages</h3>
                     <p>
                       Protect pages that you don’t feel like sharing like
                       account, billing pages without permission.
@@ -164,16 +164,16 @@ const Help = () => {
                 </div>
               </div>
 
-              <div class="col-md-4">
-                <div class="card card-pricing card-h-100">
-                  <div class="card-body">
+              <div className="col-md-4">
+                <div className="card card-pricing card-h-100">
+                  <div className="card-body">
                     <img
                       src={BlurFeature}
                       alt="blur-features"
                       height="48"
-                      class="mb-2"
+                      className="mb-2"
                     />
-                    <h3 class="mb-3">Blur sessions tabs with ease</h3>
+                    <h3 className="mb-3">Blur sessions tabs with ease</h3>
                     <p>
                       {' '}
                       Blur any selected text or page and Hide sensitive
@@ -184,13 +184,13 @@ const Help = () => {
               </div>
             </div>
 
-            <div class="row mt-1">
-              <div class="col-md-4">
-                <div class="card card-pricing card-h-100">
-                  <div class="card-body">
-                    <img src={SesssionTimer} alt="" height="48" class="mb-2" />
-                    <h3 class="mb-3">Session timer for session share</h3>
-                    <p class="">
+            <div className="row mt-1">
+              <div className="col-md-4">
+                <div className="card card-pricing card-h-100">
+                  <div className="card-body">
+                    <img src={SesssionTimer} alt="" height="48" className="mb-2" />
+                    <h3 className="mb-3">Session timer for session share</h3>
+                    <p className="">
                       Display Set timer on every session so you can see when you
                       run out time.
                     </p>
@@ -198,16 +198,16 @@ const Help = () => {
                 </div>
               </div>
 
-              <div class="col-md-4">
-                <div class="card card-pricing card-h-100">
-                  <div class="card-body">
+              <div className="col-md-4">
+                <div className="card card-pricing card-h-100">
+                  <div className="card-body">
                     <img
                       src={WeProtectPrivacy}
                       alt=""
                       height="48"
-                      class="mb-2"
+                      className="mb-2"
                     />
-                    <h3 class="mb-3">We protect your privacy </h3>
+                    <h3 className="mb-3">We protect your privacy </h3>
                     <p>
                       We do not use shared storage,so other tabs and websites
                       therefore cannot monitor your activity.
@@ -216,16 +216,16 @@ const Help = () => {
                 </div>
               </div>
 
-              <div class="col-md-4">
-                <div class="card card-pricing card-h-100">
-                  <div class="card-body">
+              <div className="col-md-4">
+                <div className="card card-pricing card-h-100">
+                  <div className="card-body">
                     <img
                       src={RockSolidSecurity}
                       alt=""
                       height="48"
-                      class="mb-2"
+                      className="mb-2"
                     />
-                    <h3 class="mb-3">Rock solid security</h3>
+                    <h3 className="mb-3">Rock solid security</h3>
                     <p>
                       AES-256 for symmetric operations and RSA 2048 bit for
                       asymmetric operations to for every sessions.

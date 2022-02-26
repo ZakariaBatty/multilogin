@@ -15,6 +15,9 @@ import Pricing from 'views/Pricing/Pricing';
 import Compare from 'views/Compare/Compare';
 import PrivacyPolicy from 'views/PrivacyTerm/PrivacyPolicy';
 import TermsServices from 'views/PrivacyTerm/TermsServices';
+import Login from 'views/loginPage/Login';
+import Register from 'views/loginPage/Register';
+import Profile from 'views/account/Profile';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -28,6 +31,9 @@ ReactDOM.render(
       <Route path="/compare-plans" element={<Compare />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/terms-of-services" element={<TermsServices />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/my-account" element={<Profile />} />
     </Routes>
     <Footer />
   </BrowserRouter>,

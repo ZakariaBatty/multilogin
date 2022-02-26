@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Packs.css';
 import { Link } from 'react-router-dom';
 import ConIonicMdCheckmark from '../../../../assets/images/blogs/Icon-ionic-md-checkmark.svg';
 
 const Packs = () => {
+  const [pack, setPack] = useState(false);
+
+  const changePack = (event) => {
+    event.preventDefault();
+    console.log(pack);
+  };
   return (
     <>
       {/* <!-- START PRICING --> */}
@@ -24,6 +30,7 @@ const Packs = () => {
                   </Link>
                   <Link
                     to="#"
+                    onClick={event =>changePack()}
                     className="btn-black pricing-button pricing-yearly mr-2"
                   >
                     Yearly
@@ -145,9 +152,9 @@ const Packs = () => {
                       Bookmarks
                     </li>
                   </ul>
-                  <a href="" className="btn-buy-now-solid mt-4 mb-4">
+                  <Link to="#" className="btn-buy-now-solid mt-4 mb-4">
                     Buy Now
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -230,13 +237,14 @@ const Packs = () => {
                       Automatic proxy assign
                     </li>
                   </ul>
-                  <a to="" className="btn-buy-now-solid mt-4 mb-4">
+                  <Link to="" className="btn-buy-now-solid mt-4 mb-4">
                     Buy Now
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
+          {/* second pack */}
           <div
             className="row mt-5 pt-5 yearly-price-cards price-card-container"
             style={{ display: 'none' }}
@@ -347,9 +355,9 @@ const Packs = () => {
                       Bookmarks
                     </li>
                   </ul>
-                  <a to="#" className="btn-buy-now-solid mt-4 mb-4">
+                  <Link to="#" className="btn-buy-now-solid mt-4 mb-4">
                     Buy Now
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -433,9 +441,9 @@ const Packs = () => {
                       Automatic proxy assign
                     </li>
                   </ul>
-                  <a to="" className="btn-buy-now-solid mt-4 mb-4">
+                  <Link to="" className="btn-buy-now-solid mt-4 mb-4">
                     Buy Now
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
