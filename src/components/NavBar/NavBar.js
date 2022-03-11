@@ -57,13 +57,55 @@ const Header = () => {
             <a className="btn-extension mr-1" type="button" href="#">
               Install Chrome Extension
             </a>
-            <li className="nav-item me-0">
+            {/* <li className="nav-item me-0">
               <a className="btn-black mr-1" type="button" href="/register">
                 Register
               </a>
               <a className="btn-black" type="button" href="/login">
                 Login
               </a>
+            </li> */}
+            <li className="dropdown">
+              <a
+                className="nav-link dropdown-toggle arrow-none me-0"
+                style={{
+                  border: '1px solid',
+                  borderRadius: '5px',
+                  padding: '.45rem 2rem',
+                }}
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="false"
+                aria-expanded="false"
+              >
+                <span className="account-user-name">
+                  <i className="uil-user-circle"></i> zbatty@gmail.com
+                </span>
+              </a>
+              <div className="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
+                <a
+                  href="/my-account/subscription-and-billing"
+                  className="dropdown-item notify-item"
+                >
+                  <i className="mdi mdi-account-circle me-1"></i>
+                  <span>My Account</span>
+                </a>
+                <a href="/help-center" className="dropdown-item notify-item">
+                  <i className="mdi mdi-lifebuoy me-1"></i>
+                  <span>Support</span>
+                </a>
+                <button href="/logout" className="dropdown-item notify-item">
+                  <form
+                    style={{ display: 'none' }}
+                    id="logout_form"
+                    action="/logout"
+                    method="post"
+                  ></form>
+                  <i className="mdi mdi-logout me-1"></i>
+                  <span>Logout</span>
+                </button>
+              </div>
             </li>
           </ul>
         </div>

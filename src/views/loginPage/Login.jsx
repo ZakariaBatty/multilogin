@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 import './Login.css';
-// import axios from 'axios';
-// axios.defaults.withCredentials = true;
+import { saveAuthToLocalStorage } from '../../helpers/Item';
 
 const Login = () => {
   const [login, setLogin] = useState({
     pass: '',
     login: '',
-    _key: '9c2t3Y8pXc8eOZ2MIh2g',
+    _key: 'OrJA5IxBeH71YbeV3ecL',
   });
-  const [error, setError] = React.useState(false);
+
+  var data = new FormData();
+  data.append('_key', login._key);
+  data.append('login', login.pass);
+  data.append('pass', login.login);
 
   const handleInputChange = e => {
     setLogin({ ...login, [e.target.name]: e.target.value });
@@ -17,26 +20,26 @@ const Login = () => {
 
   const handelSubmit = async e => {
     e.preventDefault();
-    try {
-      const response = await fetch('https://sendy.degentle.com/api/login', {
-        withCredentials: true,
-        method: 'POST',
-        login,
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
-      if (response) {
-        console.log(response.json());
-      }
-      console.log('test');
-    } catch (error) {
-      console.log(error.response.data);
-      console.log(error);
-
-      // error && setError(error.response.data);
-    }
+    await fetch('https://sendy.degentle.com/api/login', {
+      withCredentials: true,
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+      },
+      body: data.toString(),
+    })
+      .then(res => {
+        return new Promise(resolve => {
+          if (!res.id) {
+            resolve('fail');
+          }
+          // saveAuthToLocalStorage(res.api_token);
+          console.log('login', res.id);
+        });
+      })
+      .catch(err => console.log(err));
   };
+
   return (
     <>
       {/* <!-- START HOW IT WORKS 1 --> */}
@@ -56,7 +59,7 @@ const Login = () => {
                         <input
                           onChange={event => handleInputChange(event)}
                           class="form-control"
-                          name="pass"
+                          name="login"
                           type="email"
                           id="emailaddress"
                           placeholder="Enter your email"
@@ -73,7 +76,7 @@ const Login = () => {
                             type="password"
                             id="password"
                             class="form-control"
-                            name="login"
+                            name="pass"
                             placeholder="Enter your password"
                           />
                           <div
