@@ -6,7 +6,7 @@ export const saveAuthToLocalStorage = jwt => {
 // check if logged
 export const isLogin = () => {
   if (localStorage.getItem('jwt')) {
-    return JSON.parse(localStorage.getItem('jwt'));
+    return true;
   } else {
     return false;
   }
