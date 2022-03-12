@@ -384,7 +384,7 @@ const Packs = () => {
                   <div className="card-body text-center">
                     <div className="card-pricing-plan-tag">
                       <img
-                        src="../assets/images/Icon-awesome-star.svg"
+                        src={ConIonicMdCheckmark}
                         alt="icon"
                         className="mr-1"
                       />

@@ -17,6 +17,12 @@
   font-weight: 600;
 }
 
+.nav-pills > li > a,
+.nav-tabs > li > a:hover {
+  color: #6c757d;
+  font-weight: 600;
+}
+
 .tab-content {
   background-color: white;
   color: black;

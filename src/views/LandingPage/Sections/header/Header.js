@@ -28,7 +28,7 @@ const header = () => {
               marginTop: '80px',
             }}
           >
-            <h2>Meet Sendwin</h2>
+            <h2>Meet multilogin</h2>
             <h1 style={{ fontSize: '5em' }}>Future of Browsing</h1>
             <div
               style={{
