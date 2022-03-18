@@ -9,16 +9,17 @@ const Login = () => {
     _key: 'OrJA5IxBeH71YbeV3ecL',
   });
 
-  var data = new FormData();
+  var data = new URLSearchParams();
   data.append('_key', login._key);
-  data.append('login', login.pass);
-  data.append('pass', login.login);
+  data.append('login', login.login);
+  data.append('pass', login.pass);
 
   const handleInputChange = e => {
     setLogin({ ...login, [e.target.name]: e.target.value });
   };
 
   const handelSubmit = async e => {
+    console.log(data);
     e.preventDefault();
     await fetch('https://sendy.degentle.com/api/login', {
       withCredentials: true,
@@ -33,8 +34,9 @@ const Login = () => {
           if (!res.id) {
             resolve('fail');
           }
-          // saveAuthToLocalStorage(res.api_token);
-          console.log('login', res.id);
+          saveAuthToLocalStorage(res);
+          console.log(res);
+          console.log(res.id);
         });
       })
       .catch(err => console.log(err));

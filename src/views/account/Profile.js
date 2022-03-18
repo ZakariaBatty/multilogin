@@ -6,10 +6,10 @@ import Accountsecurity from './Accountsecurity';
 import Affiliate from './Affiliate';
 
 const Profile = props => {
-  const [upgrade, setUpgrade] = useState(true);
-  const [account, setAccount] = useState(false);
-  const [accountsecurity, setAccountsecurity] = useState(true);
-  const [affiliate, setAffiliate] = useState(true);
+  const [upgrade, setUpgrade] = useState(false);
+  const [account, setAccount] = useState(true);
+  const [accountsecurity, setAccountsecurity] = useState(false);
+  const [affiliate, setAffiliate] = useState(false);
 
   const ChangeClass = name => {
     // e.preventDefault();
@@ -19,40 +19,40 @@ const Profile = props => {
       document.getElementById('item3').classList.remove('active');
       document.getElementById('item4').classList.remove('active');
       document.getElementById('item1').classList.add('active');
-      setUpgrade(!upgrade);
-      setAccount(!account);
-      setAccountsecurity(!accountsecurity);
-      setAffiliate(!affiliate);
+      setUpgrade(false);
+      setAccount(true);
+      setAccountsecurity(false);
+      setAffiliate(false);
     }
     if (a === 'Upgrade') {
       document.getElementById('item1').classList.remove('active');
       document.getElementById('item3').classList.remove('active');
       document.getElementById('item4').classList.remove('active');
       document.getElementById('item2').classList.add('active');
-      setUpgrade(!upgrade);
-      setAccount(!account);
-      setAccountsecurity(!accountsecurity);
-      setAffiliate(!affiliate);
+      setUpgrade(true);
+      setAccount(false);
+      setAccountsecurity(false);
+      setAffiliate(false);
     }
     if (a === 'Account') {
       document.getElementById('item1').classList.remove('active');
       document.getElementById('item2').classList.remove('active');
       document.getElementById('item4').classList.remove('active');
       document.getElementById('item3').classList.add('active');
-      setUpgrade(!upgrade);
-      setAccount(!account);
-      setAccountsecurity(!accountsecurity);
-      setAffiliate(!affiliate);
+      setUpgrade(false);
+      setAccount(false);
+      setAccountsecurity(true);
+      setAffiliate(false);
     }
     if (a === 'Affiliate') {
       document.getElementById('item1').classList.remove('active');
       document.getElementById('item2').classList.remove('active');
       document.getElementById('item3').classList.remove('active');
       document.getElementById('item4').classList.add('active');
-      setUpgrade(!upgrade);
-      setAccount(!account);
-      setAccountsecurity(!accountsecurity);
-      setAffiliate(!affiliate);
+      setUpgrade(false);
+      setAccount(false);
+      setAccountsecurity(false);
+      setAffiliate(true);
     }
   };
 
@@ -112,10 +112,12 @@ const Profile = props => {
                     </li>
                   </ul>
                   <div className="tab-content">
-                    {account ? null : <Account />}
-                    {upgrade ? null : <Upgrade />}
-                    {accountsecurity ? null : <Accountsecurity />}
-                    {affiliate ? null : <Affiliate />}
+                    {account && account === true ? <Account /> : null}
+                    {upgrade && upgrade === true ? <Upgrade /> : null}
+                    {accountsecurity && accountsecurity === true ? (
+                      <Accountsecurity />
+                    ) : null}
+                    {affiliate && affiliate === true ? <Affiliate /> : null}
                   </div>
                 </div>
               </div>
