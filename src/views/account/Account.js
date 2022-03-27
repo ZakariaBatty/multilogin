@@ -34,7 +34,6 @@ const Account = props => {
       );
     }
   };
-
   return (
     <div>
       <h4 className="tab-title">Billing and Subscription</h4>
@@ -66,14 +65,20 @@ const Account = props => {
             </tr>
           </thead>
           <tbody>
-            {/* {useinfo &&
-              useinfo.map((item, index) => (
-                <tr>
-                  <td></td>
-                  <td className="text-center">{props?.userInfo?.name_f}</td>
-                  <td className="text-center"></td>
-                </tr>
-              ))} */}
+            {props?.userInfo?.subscriptions[1] ? (
+              <tr>
+                <td>{props?.userInfo?.subscriptions[2]}</td>
+                <td className="text-center">{props?.userInfo.name_l}</td>
+                <td className="text-center">2.99</td>
+              </tr>
+            ) : null}
+            {props?.userInfo?.subscriptions[2] ? (
+              <tr>
+                <td>{props?.userInfo?.subscriptions[2]}</td>
+                <td className="text-center">{props?.userInfo.name_l}</td>
+                <td className="text-center">2.99</td>
+              </tr>
+            ) : null}
           </tbody>
         </table>
       )}
