@@ -6,20 +6,14 @@ export const saveAuthToLocalStorage = userInfo => {
 // check if logged
 export const isLogin = () => {
   if (localStorage.getItem('userInfo')) {
-    return true;
+    return JSON.parse(localStorage.getItem('userInfo'));
   } else {
     return false;
   }
 };
 
 // logout
-export const logout = cb => {
+export const logout = () => {
   localStorage.removeItem('userInfo');
   document.cookie = 'token=;expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/';
-  cb();
-};
-
-// authentication
-export const checkAuth = authId => {
-  return isLogin().auth._id === authId;
 };

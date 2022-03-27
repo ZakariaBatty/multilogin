@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import logo from '../../assets/images/multilogin.png';
+import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 const Footer = () => {
   return (

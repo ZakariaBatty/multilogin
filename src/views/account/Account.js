@@ -1,6 +1,40 @@
 import React from 'react';
 
-const Account = () => {
+const Account = props => {
+  const subs = () => {
+    if (
+      props?.userInfo?.subscriptions[1] &&
+      !props?.userInfo?.subscriptions[2]
+    ) {
+      return (
+        <tr>
+          <td>Pro</td>
+          <td className="text-center">Purchase</td>
+          <td className="text-center">{props?.userInfo?.subscriptions[1]}</td>
+        </tr>
+      );
+    } else if (
+      props?.userInfo?.subscriptions[1] &&
+      props?.userInfo?.subscriptions[2]
+    ) {
+      return (
+        <tr>
+          <td>Pro plus</td>
+          <td className="text-center">Purchase</td>
+          <td className="text-center">{props?.userInfo?.subscriptions[2]}</td>
+        </tr>
+      );
+    } else {
+      return (
+        <tr>
+          <td>Free</td>
+          <td className="text-center">Registration</td>
+          <td className="text-center">N/A</td>
+        </tr>
+      );
+    }
+  };
+
   return (
     <div>
       <h4 className="tab-title">Billing and Subscription</h4>
@@ -13,20 +47,36 @@ const Account = () => {
             <th className="text-center">End</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>Free</td>
-            <td className="text-center">Registration</td>
-            <td className="text-center">N/A</td>
-          </tr>
-        </tbody>
+        <tbody>{subs()}</tbody>
       </table>
       <h4 style={{ padding: '0px 20px' }}>Transactions</h4>
-      <div>
-        <div className="text-start" style={{ padding: '1rem' }}>
-          No transactions found
+      {!props?.userInfo?.subscriptions[1] ? (
+        <div>
+          <div className="text-start" style={{ padding: '1rem' }}>
+            No transactions found
+          </div>
         </div>
-      </div>
+      ) : (
+        <table className="table table-centered mt-3">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th className="text-center">name</th>
+              <th className="text-center">Amont</th>
+            </tr>
+          </thead>
+          <tbody>
+            {/* {useinfo &&
+              useinfo.map((item, index) => (
+                <tr>
+                  <td></td>
+                  <td className="text-center">{props?.userInfo?.name_f}</td>
+                  <td className="text-center"></td>
+                </tr>
+              ))} */}
+          </tbody>
+        </table>
+      )}
     </div>
   );
 };

@@ -18,9 +18,6 @@ import TermsServices from 'views/PrivacyTerm/TermsServices';
 import Login from 'views/loginPage/Login';
 import Register from 'views/loginPage/Register';
 import Account from 'views/account/Profile';
-import Upgrade from 'views/account/Upgrade';
-import Accountsecurity from 'views/account/Accountsecurity';
-import Affiliate from 'views/account/Affiliate';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -37,12 +34,6 @@ ReactDOM.render(
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/my-account" element={<Account />} />
-      {/* <Route path="/my-account/upgrade" element={<Upgrade />} />
-      <Route
-        path="/my-account/account-security"
-        element={<Accountsecurity />}
-      />
-      <Route path="/my-account/affiliate" element={<Affiliate />} /> */}
     </Routes>
     <Footer />
   </BrowserRouter>,

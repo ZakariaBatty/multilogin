@@ -1,11 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Profile.css';
 import Upgrade from './Upgrade';
 import Account from './Account';
 import Accountsecurity from './Accountsecurity';
 import Affiliate from './Affiliate';
+import { isLogin } from '../../helpers/Item';
 
 const Profile = props => {
+  const [userInfo, setUserInfo] = useState(null);
+  useEffect(() => {
+    setUserInfo(isLogin());
+  }, [isLogin]);
+
   const [upgrade, setUpgrade] = useState(false);
   const [account, setAccount] = useState(true);
   const [accountsecurity, setAccountsecurity] = useState(false);
@@ -112,7 +118,9 @@ const Profile = props => {
                     </li>
                   </ul>
                   <div className="tab-content">
-                    {account && account === true ? <Account /> : null}
+                    {account && account === true ? (
+                      <Account userInfo={userInfo} />
+                    ) : null}
                     {upgrade && upgrade === true ? <Upgrade /> : null}
                     {accountsecurity && accountsecurity === true ? (
                       <Accountsecurity />

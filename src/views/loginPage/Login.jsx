@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Login.css';
 import { saveAuthToLocalStorage } from '../../helpers/Item';
 
 const Login = () => {
+  const natigate = useNavigate();
   const [login, setLogin] = useState({
     pass: '',
     login: '',
     _key: 'OrJA5IxBeH71YbeV3ecL',
   });
+
+  const [error, setError] = useState('');
 
   var data = new URLSearchParams();
   data.append('_key', login._key);
@@ -30,16 +34,22 @@ const Login = () => {
       body: data.toString(),
     })
       .then(res => {
+        return res.json();
+      })
+      .then(res => {
         return new Promise(resolve => {
           if (!res.id) {
             resolve('fail');
+            setError('Incorrect email or password');
           }
           saveAuthToLocalStorage(res);
-          console.log(res);
-          console.log(res.id);
+          natigate('/my-account');
+          window.location.reload(false);
         });
       })
-      .catch(err => console.log(err));
+      .catch(err => {
+        console.log(err);
+      });
   };
 
   return (
@@ -52,6 +62,9 @@ const Login = () => {
               <div class="card login-card">
                 <div class="card-body">
                   <h1 class="login-page-header mb-3">Let's sign you in</h1>
+                  <h2 class="" style={{ color: 'red' }}>
+                    {error}
+                  </h2>
                   <form onSubmit={handelSubmit}>
                     <div>
                       <div class="mb-3">

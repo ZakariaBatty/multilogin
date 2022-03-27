@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './NavBar.css';
 import logo from '../../assets/images/multilogin.png';
-import { isLogin } from '../../helpers/Item';
+import { isLogin, logout } from '../../helpers/Item';
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
+  const navigate = useNavigate();
+  const [userInfo, setUserInfo] = useState(null);
+
+  useEffect(() => {
+    setUserInfo(isLogin());
+  }, [isLogin]);
+
+  const diconnect = async e => {
+    e.preventDefault();
+    await logout();
+    navigate('/');
+    window.location.reload(false);
+  };
+
   return (
     // NAVBAR START
     <nav className="navbar navbar-expand-lg py-lg-3 navbar-dark mt-2">
@@ -58,7 +73,7 @@ const Header = () => {
             <a className="btn-extension mr-1" type="button" href="#">
               Install Chrome Extension
             </a>
-            {isLogin ? (
+            {!userInfo ? (
               <li className="nav-item me-0">
                 <a className="btn-black mr-1" type="button" href="/register">
                   Register
@@ -82,14 +97,11 @@ const Header = () => {
                   aria-expanded="false"
                 >
                   <span className="account-user-name">
-                    <i className="uil-user-circle"></i> zbatty@gmail.com
+                    <i className="uil-user-circle"></i> {userInfo.login}
                   </span>
                 </a>
                 <div className="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
-                  <a
-                    href="/my-account/subscription-and-billing"
-                    className="dropdown-item notify-item"
-                  >
+                  <a href="/my-account" className="dropdown-item notify-item">
                     <i className="mdi mdi-account-circle me-1"></i>
                     <span>My Account</span>
                   </a>
@@ -97,13 +109,10 @@ const Header = () => {
                     <i className="mdi mdi-lifebuoy me-1"></i>
                     <span>Support</span>
                   </a>
-                  <button href="/logout" className="dropdown-item notify-item">
-                    <form
-                      style={{ display: 'none' }}
-                      id="logout_form"
-                      action="/logout"
-                      method="post"
-                    ></form>
+                  <button
+                    className="dropdown-item notify-item"
+                    onClick={event => diconnect(event)}
+                  >
                     <i className="mdi mdi-logout me-1"></i>
                     <span>Logout</span>
                   </button>

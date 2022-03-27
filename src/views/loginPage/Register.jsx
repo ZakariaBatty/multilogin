@@ -1,7 +1,52 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Login.css';
+import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
+  const navigate = useNavigate();
+
+  const [login, setLogin] = useState({
+    email: '',
+    pass: '',
+    name_f: '',
+    name_l: '',
+  });
+
+  var data = new URLSearchParams();
+  data.append('_key', 'OrJA5IxBeH71YbeV3ecL');
+  data.append('login', login.email);
+  data.append('email', login.email);
+  data.append('pass', login.pass);
+  data.append('name_f', login.name_f);
+  data.append('name_l', login.name_l);
+
+  const handleInputChange = e => {
+    setLogin({ ...login, [e.target.name]: e.target.value });
+  };
+
+  const handelSubmit = async e => {
+    e.preventDefault();
+    await fetch(`https://sendy.degentle.com/api/signup`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+      },
+      body: data.toString(),
+    })
+      .then(res => {
+        return res.json();
+      })
+      .then(res => {
+        console.log('register', res);
+        if (res.ok !== false) {
+          return new Promise(resolve => {
+            resolve('success');
+            navigate('/login');
+          });
+        }
+      })
+      .catch(err => console.log(err));
+  };
   return (
     <>
       {/* <!-- START HOW IT WORKS 1 --> */}
@@ -14,18 +59,33 @@ const Register = () => {
                   <h1 class="login-page-header mb-3">
                     Let's register yourself
                   </h1>
-                  <div action="/register" method="post" class="register-form">
+                  <form onSubmit={handelSubmit} class="register-form">
                     <div class="mb-3">
-                      <label for="fullname" class="form-label">
-                        Full Name
+                      <label for="Firstname" class="form-label">
+                        First Name
                       </label>
                       <input
-                        name="name"
+                        onChange={event => handleInputChange(event)}
+                        name="name_f"
                         class="form-control"
                         type="text"
                         id="fullname"
-                        required=""
-                        placeholder="Enter your name"
+                        required
+                        placeholder="Enter your First name"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="Lastname" class="form-label">
+                        Last Name
+                      </label>
+                      <input
+                        onChange={event => handleInputChange(event)}
+                        name="name_l"
+                        class="form-control"
+                        type="text"
+                        id="fullname"
+                        required
+                        placeholder="Enter your Last Name"
                       />
                     </div>
 
@@ -34,6 +94,7 @@ const Register = () => {
                         Email address
                       </label>
                       <input
+                        onChange={event => handleInputChange(event)}
                         class="form-control"
                         type="email"
                         id="emailaddress"
@@ -49,15 +110,16 @@ const Register = () => {
                       </label>
                       <div class="input-group input-group-merge">
                         <input
+                          onChange={event => handleInputChange(event)}
                           type="password"
                           id="password"
                           class="form-control"
                           placeholder="Enter your password"
-                          name="password"
+                          name="pass"
                         />
-                        <div class="input-group-text" data-password="false">
+                        {/* <div class="input-group-text" data-password="false">
                           <span class="password-eye"></span>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
 
@@ -73,13 +135,13 @@ const Register = () => {
                           placeholder="Confirm your password"
                           name="confirm_password"
                         />
-                        <div class="input-group-text" data-password="false">
+                        {/* <div class="input-group-text" data-password="false">
                           <span class="password-eye"></span>
-                        </div>
+                        </div> */}
                       </div>
                       <div style={{ color: '#800' }}></div>
                     </div>
-                    <div class="mb-4">
+                    {/* <div class="mb-4">
                       <label for="reffer-code" class="form-label">
                         Refer Code
                       </label>
@@ -93,7 +155,7 @@ const Register = () => {
                         />
                       </div>
                       <div style={{ color: '#800' }} id="error-message"></div>
-                    </div>
+                    </div> */}
 
                     <div class="mb-3 mb-0 text-center">
                       <button
@@ -102,14 +164,13 @@ const Register = () => {
                         style={{ width: '100%', padding: ' .7rem 2rem' }}
                         id="submit-button"
                       >
-                        {' '}
-                        Register{' '}
+                        Register
                       </button>
                     </div>
-                  </div>
+                  </form>
                   <div class="mt-3 text-center">
                     <p>
-                      Already have an account?{' '}
+                      Already have an account?
                       <a href="/login" class="ms-1">
                         <b>Login</b>
                       </a>

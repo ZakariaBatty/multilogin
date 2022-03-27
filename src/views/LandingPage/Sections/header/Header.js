@@ -14,6 +14,7 @@ const header = () => {
     }
   };
   window.addEventListener('scroll', changeWidth);
+
   return (
     <>
       {/* START HOW IT WORKS 1  */}
