@@ -4,7 +4,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap/dist/css/bootstrap.css';
-// testL
 //@ pages
 import LandingPage from 'views/LandingPage/LandingPage';
 import HelpCenter from 'views/HelpCenter/HelpCenter';
