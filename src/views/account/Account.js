@@ -67,7 +67,7 @@ const Account = props => {
           <tbody>
             {props?.userInfo?.subscriptions[1] ? (
               <tr>
-                <td>{props?.userInfo?.subscriptions[2]}</td>
+                <td>{props?.userInfo?.subscriptions[1]}</td>
                 <td className="text-center">{props?.userInfo.name_l}</td>
                 <td className="text-center">2.99</td>
               </tr>
@@ -76,7 +76,7 @@ const Account = props => {
               <tr>
                 <td>{props?.userInfo?.subscriptions[2]}</td>
                 <td className="text-center">{props?.userInfo.name_l}</td>
-                <td className="text-center">2.99</td>
+                <td className="text-center">6.99</td>
               </tr>
             ) : null}
           </tbody>
