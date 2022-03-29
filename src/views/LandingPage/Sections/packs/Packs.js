@@ -162,7 +162,11 @@ const Packs = () => {
                         Bookmarks
                       </li>
                     </ul>
-                    <Link to="#" className="btn-buy-now-solid mt-4 mb-4">
+                    <Link
+                      className="btn-buy-now-solid mt-4 mb-4"
+                      target="_blank"
+                      to="https://multiplelogin.com/members/buy/L29BD8laG9yx"
+                    >
                       Buy Now
                     </Link>
                   </div>
@@ -250,7 +254,11 @@ const Packs = () => {
                         Automatic proxy assign
                       </li>
                     </ul>
-                    <Link to="" className="btn-buy-now-solid mt-4 mb-4">
+                    <Link
+                      className="btn-buy-now-solid mt-4 mb-4"
+                      target="_blank"
+                      to="https://multiplelogin.com/members/buy/DbNWW7LymtVC"
+                    >
                       Buy Now
                     </Link>
                   </div>
@@ -372,7 +380,11 @@ const Packs = () => {
                         Bookmarks
                       </li>
                     </ul>
-                    <Link to="#" className="btn-buy-now-solid mt-4 mb-4">
+                    <Link
+                      className="btn-buy-now-solid mt-4 mb-4"
+                      target="_blank"
+                      to="https://multiplelogin.com/members/buy/TEcVQqwGJjPO"
+                    >
                       Buy Now
                     </Link>
                   </div>
@@ -461,7 +473,11 @@ const Packs = () => {
                         Automatic proxy assign
                       </li>
                     </ul>
-                    <Link to="" className="btn-buy-now-solid mt-4 mb-4">
+                    <Link
+                      className="btn-buy-now-solid mt-4 mb-4"
+                      target="_blank"
+                      to="https://multiplelogin.com/members/buy/FXyOrTLOq3HE"
+                    >
                       Buy Now
                     </Link>
                   </div>

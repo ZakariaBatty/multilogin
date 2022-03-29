@@ -36,7 +36,11 @@ const Upgrade = () => {
               <td className="text-center">1 month(s)</td>
               <td className="text-center">2.99 / month</td>
               <td className="text-center">
-                <a className="btn-monthly mr-2 pricing-button pricing-monthly">
+                <a
+                  className="btn-monthly mr-2 pricing-button pricing-monthly"
+                  target="_blank"
+                  href="https://multiplelogin.com/members/buy/L29BD8laG9yx"
+                >
                   Upgrade
                 </a>
               </td>
@@ -46,7 +50,11 @@ const Upgrade = () => {
               <td className="text-center">1 month(s)</td>
               <td className="text-center">6.99 / month</td>
               <td className="text-center">
-                <a className="btn-monthly mr-2 pricing-button pricing-monthly">
+                <a
+                  className="btn-monthly mr-2 pricing-button pricing-monthly"
+                  target="_blank"
+                  href="https://multiplelogin.com/members/buy/DbNWW7LymtVC"
+                >
                   Upgrade
                 </a>
               </td>
@@ -56,7 +64,11 @@ const Upgrade = () => {
               <td className="text-center">12 month(s)</td>
               <td className="text-center">2.29 / month</td>
               <td className="text-center">
-                <a className="btn-monthly mr-2 pricing-button pricing-monthly">
+                <a
+                  className="btn-monthly mr-2 pricing-button pricing-monthly"
+                  target="_blank"
+                  href="https://multiplelogin.com/members/buy/TEcVQqwGJjPO"
+                >
                   Upgrade
                 </a>
               </td>
@@ -66,7 +78,11 @@ const Upgrade = () => {
               <td className="text-center">12 month(s)</td>
               <td className="text-center">6.49 / month</td>
               <td className="text-center">
-                <a className="btn-monthly mr-2 pricing-button pricing-monthly">
+                <a
+                  className="btn-monthly mr-2 pricing-button pricing-monthly"
+                  target="_blank"
+                  href="https://multiplelogin.com/members/buy/FXyOrTLOq3HE"
+                >
                   Upgrade
                 </a>
               </td>
