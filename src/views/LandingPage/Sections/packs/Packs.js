@@ -162,13 +162,13 @@ const Packs = () => {
                         Bookmarks
                       </li>
                     </ul>
-                    <Link
+                    <a
                       className="btn-buy-now-solid mt-4 mb-4"
                       target="_blank"
-                      to="https://multiplelogin.com/members/buy/L29BD8laG9yx"
+                      href="https://multiplelogin.com/members/buy/L29BD8laG9yx"
                     >
                       Buy Now
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -254,13 +254,13 @@ const Packs = () => {
                         Automatic proxy assign
                       </li>
                     </ul>
-                    <Link
+                    <a
                       className="btn-buy-now-solid mt-4 mb-4"
                       target="_blank"
-                      to="https://multiplelogin.com/members/buy/DbNWW7LymtVC"
+                      href="https://multiplelogin.com/members/buy/DbNWW7LymtVC"
                     >
                       Buy Now
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -380,13 +380,13 @@ const Packs = () => {
                         Bookmarks
                       </li>
                     </ul>
-                    <Link
+                    <a
                       className="btn-buy-now-solid mt-4 mb-4"
                       target="_blank"
-                      to="https://multiplelogin.com/members/buy/TEcVQqwGJjPO"
+                      href="https://multiplelogin.com/members/buy/TEcVQqwGJjPO"
                     >
                       Buy Now
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -473,13 +473,13 @@ const Packs = () => {
                         Automatic proxy assign
                       </li>
                     </ul>
-                    <Link
+                    <a
                       className="btn-buy-now-solid mt-4 mb-4"
                       target="_blank"
-                      to="https://multiplelogin.com/members/buy/FXyOrTLOq3HE"
+                      href="https://multiplelogin.com/members/buy/FXyOrTLOq3HE"
                     >
                       Buy Now
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
