@@ -28,6 +28,6 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
           server: ftp.multiplelogin.com
-          username: send@multiplelogin.com
+          username: multiple
           password: ${{ secrets.FTP_PASSWORD  }}
           local-dir: build/
